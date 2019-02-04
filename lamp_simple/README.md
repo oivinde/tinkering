@@ -93,9 +93,9 @@ Logon to ansible.demo.local:
 
 `nano /etc/hosts`
 
-       ´192.168.90.10 ansible ansible.demo.local
+        192.168.90.10 ansible ansible.demo.local
         192.168.90.20 lab01 lab01.demo.local
-        192.168.90.10 lab02 lab02.demo.local´
+        192.168.90.10 lab02 lab02.demo.local
 
 `ssh-keygen`
 
