@@ -32,7 +32,7 @@ database server.
 
 In VirtualBox, create NAT Network "DemoNet" - 192.168.90.0/24
 
-##### Create new virtual machine:
+#### Create new virtual machine:
 - Name: ansible.demo.local
 - CPU: 2
 - RAM: 2048MB
@@ -52,9 +52,8 @@ Dismount/remove mounted ISO when install is finished.
 Logon to console in new machine and run the following:
 
 Install general requirements
-´yum install NetworkManager-tui python2 python2-libselinux -y´
-
-´yum update -y´
+`yum install NetworkManager-tui python2 python2-libselinux -y`
+`yum update -y`
 
 Shutdown machine.
 
