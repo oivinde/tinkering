@@ -27,8 +27,7 @@ You should see a simple test page and a list of databases retrieved from the
 database server.
 
 -------
-(My additions)
-### My demo setup based on VirtualBox:
+### Ansible for Dummies : My demo setup based on VirtualBox:
 
 In VirtualBox, create NAT Network "DemoNet" - 192.168.90.0/24
 
