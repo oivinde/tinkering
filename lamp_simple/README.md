@@ -121,6 +121,6 @@ Supress deprecation warnings. Not important, but looks nicer when demoing!
 
 Enter wanted subfolder and change "hosts" file to reflect lab01 and lab01 names.
 
-Since the environemnt is isolated, I just run lynx on the ansible.demo.local machine to show result of LAMP deploy.
+Since the environemnt is isolated and I have not install GUI on the ansible.demo.local machine, I just run lynx on the ansible.demo.local machine to show result of LAMP deploy.
 
 `lynx http://lab01.demo.local/index.php
