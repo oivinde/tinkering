@@ -21,10 +21,9 @@
 - name: Start Mysql Service
   service: name=mysqld state=started enabled=yes
 
-- name: insert iptables rule
-  lineinfile: dest=/etc/sysconfig/iptables state=present regexp="{{ mysql_port }}"
-              insertafter="^:OUTPUT " line="-A INPUT -p tcp  --dport {{ mysql_port }} -j  ACCEPT"
-  notify: restart iptables
+- name: Add firewalld rule for mysql in default zone
+  command: firewall-cmd --permanent --add-service=mysql
+  notify: restart firewalld
 
 - name: Create Application Database
   mysql_db: name={{ dbname }} state=present

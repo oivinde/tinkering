@@ -11,10 +11,9 @@
    - libsemanage-python
    - libselinux-python
 
-- name: insert iptables rule for httpd
-  lineinfile: dest=/etc/sysconfig/iptables create=yes state=present regexp="{{ httpd_port }}" insertafter="^:OUTPUT "
-              line="-A INPUT -p tcp  --dport {{ httpd_port }} -j  ACCEPT"
-  notify: restart iptables
+- name: Add firewalld rule for http in default zone
+  command: firewall-cmd --permanent --add-service=http
+  notify: restart firewalld
 
 - name: http service state
   service: name=httpd state=started enabled=yes
