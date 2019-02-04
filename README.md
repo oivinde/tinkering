@@ -7,3 +7,4 @@ Stuff I tinker with:
 Ansible playbooks are copied from https://github.com/ansible/ansible-examples 
 
 These playbooks are in the process of being modified to work under Fedora Server and Red Hat Enterprise Linux.
+
