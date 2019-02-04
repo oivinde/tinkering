@@ -19,7 +19,7 @@
   - restart mysql
 
 - name: Start Mysql Service
-  service: name=mysqld state=started enabled=yes
+  service: name=mariadb state=started enabled=yes
 
 - name: Add firewalld rule for mysql in default zone
   command: firewall-cmd --permanent --add-service=mysql
