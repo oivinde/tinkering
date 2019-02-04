@@ -42,6 +42,7 @@ IP: 192.168.90.10/24
 GW: 192.168.90.1
 DNS: 192.168.90.1
 Hostname: ansible.demo.local
+Select NAT Network "DemoNet" in machine settings
 
 Default minimal install.
 
@@ -57,9 +58,11 @@ Shutdown machine.
 
 # Create full clone of ansible.demo.local to first lab-machine. Regenerate MAC addresses.
 Name: lab01.demo.local
+Select NAT Network "DemoNet" in machine settings
 
 # Create linked clone of lab01.demo.local. Regenerate MAC addresses.
 Name: lab02.demo.local
+Select NAT Network "DemoNet" in machine settings
 
 Boot each machine and correct hostname and IP info (with "nmtui" for convenience):
 IP: 192.168.90.20/24
