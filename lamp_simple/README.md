@@ -51,16 +51,17 @@ Dismount/remove mounted ISO when install is finished.
 Logon to console in new machine and run the following:
 
 Install general requirements
-> yum install NetworkManager-tui python2 python2-libselinux -y
-> yum update -y
+- yum install NetworkManager-tui python2 python2-libselinux -y
+- yum update -y
 
 Shutdown machine.
 
-# Create full clone of ansible.demo.local to first lab-machine. Regenerate MAC addresses.
+Create full clone of ansible.demo.local to first lab-machine. Regenerate MAC addresses.
+
 Name: lab01.demo.local
 Select NAT Network "DemoNet" in machine settings
 
-# Create linked clone of lab01.demo.local. Regenerate MAC addresses.
+Create linked clone of lab01.demo.local. Regenerate MAC addresses.
 Name: lab02.demo.local
 Select NAT Network "DemoNet" in machine settings
 
@@ -79,29 +80,29 @@ Reboot both lab machines.
 
 Logon to ansible.demo.local:
 
-> yum install ansible git lynx -y
-> nano /etc/hosts
+- yum install ansible git lynx -y
+- nano /etc/hosts
         192.168.90.10 ansible ansible.demo.local
         192.168.90.20 lab01 lab01.demo.local
         192.168.90.10 lab02 lab02.demo.local
 
-> ssh-keygen
-> ssh-copy-id lab01.demo.local
-> ssh-copy-id lab02.demo.local
-> scp /etc/hosts lab01.demo.local:/etc/hosts
-> scp /etc/hosts lab02.demo.local:/etc/hosts
+- ssh-keygen
+- ssh-copy-id lab01.demo.local
+- ssh-copy-id lab02.demo.local
+- scp /etc/hosts lab01.demo.local:/etc/hosts
+- scp /etc/hosts lab02.demo.local:/etc/hosts
 
 # Take snapshot of lab01 and lab02 in VirtualBox! Now these machines can be reused easy!
 
-# Supress deprecation warnings. Not important, but looks nicer when demoing!
-> nano /etc/ansible/ansible.cfg
+Supress deprecation warnings. Not important, but looks nicer when demoing!
+- nano /etc/ansible/ansible.cfg
         deprecation_warnings = False
 
-> git clone https://github.com/oivinde/tinkering
-> cd tinkering
+- git clone https://github.com/oivinde/tinkering
+- cd tinkering
 
 Enter wanted subfolder and change "hosts" file to reflect lab01 and lab01 names.
 
 Since the environemnt is isolated, I just run lynx on the ansible.demo.local machine to show result of LAMP deploy.
 
-> lynx http://lab01.demo.local/index.php
+- lynx http://lab01.demo.local/index.php
