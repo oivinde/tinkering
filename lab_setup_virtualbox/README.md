@@ -2,6 +2,8 @@
 
 I like to create three virtual machines for playing with Ansible. One control node where I actually run Ansible and store playbooks, two other snaphotted machines, that are as clean as possible.
 
+![alt text](https://github.com/oivinde/tinkering/blob/master/lab_setup_virtualbox/images/VirtualBox_LabSetup.png "VirtualBox Lab Setup")
+
 #### In VirtualBox, create NAT Network "DemoNet" - 192.168.90.0/24 (Preferences - Network)
 
 If you want to create port forwarding rules in the NAT Network right away, look at the bottow of this file.
