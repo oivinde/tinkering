@@ -98,7 +98,7 @@ Enter wanted subfolder and change "hosts" file to reflect lab01 and lab01 names.
 If you want to use local client to access guest machines, create port forwarding rules on the NAT network DemoNet in VirtualBox, or install GUI in ansible.demo.local.
 
 Here a sample config.
-![alt text](https://github.com/oivinde/tinkering/lab_setup_virtualbox/images/Port_Forwarding_Rules.png "Port Forwarding Rules")
+![alt text](https://github.com/oivinde/tinkering/blob/master/lab_setup_virtualbox/images/Port_Forwarding_Rules.png "Port Forwarding Rules")
 
 
 On your client SSH would be done like this: `ssh -p 2222 root@localhost`
