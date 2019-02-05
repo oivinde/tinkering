@@ -123,3 +123,5 @@ Enter wanted subfolder and change "hosts" file to reflect lab01 and lab01 names.
 Since the environemnt is isolated and I have not installed GUI on the ansible.demo.local machine, I just run lynx on the ansible.demo.local machine to show result of LAMP deploy.
 
 `lynx http://lab01.demo.local/index.php`
+
+If you want to use local client to access guest machines, create port forwarding rules on the NAT network DemoNet in VirtualBox.
