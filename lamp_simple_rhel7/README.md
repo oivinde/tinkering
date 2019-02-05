@@ -31,4 +31,4 @@ Once done, you can check the results by browsing to http://localhost/index.php.
 You should see a simple test page and a list of databases retrieved from the
 database server.
 
-## Tested and working with RHEL 7.6. SELinux set to permissive on db server to solve MariaDB startup error. Needs to be fixed.
+#### Tested and working with RHEL 7.6. SELinux set to permissive on db server to solve MariaDB startup error. Needs to be fixed.
