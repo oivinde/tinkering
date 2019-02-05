@@ -1,4 +1,4 @@
-## How to set up lab environment for Ansible in VirtualBox.
+## How to set up Fedora Server lab environment for Ansible in VirtualBox.
 
 I like to create three virtual machines for playing with Ansible. One control node where I actually run Ansible and store playbooks, two other snaphotted machines, that are as clean as possible.
 
