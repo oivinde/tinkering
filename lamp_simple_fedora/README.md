@@ -24,3 +24,5 @@ command:
 Once done, you can check the results by browsing to http://lab01.demo.local/index.php.
 You should see a simple test page and a list of databases retrieved from the
 database server.
+
+#### SELinux set to permissive on web server. This needs to be sorted out and done right.
