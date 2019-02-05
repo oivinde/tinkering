@@ -101,7 +101,7 @@ Here a sample config.
 ![alt text](https://github.com/oivinde/tinkering/blob/master/lab_setup_virtualbox/images/Port_Forwarding_Rules.png "Port Forwarding Rules")
 
 
-On your client SSH would be done like this: `ssh -p 2222 root@localhost`
+On your client SSH to ansible.demo.local, would be done like this: `ssh -p 2222 root@localhost`
 
 Or just run lynx on the ansible.demo.local machine to show result of for instance LAMP deploy.
 
