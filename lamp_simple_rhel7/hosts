@@ -1,7 +1,5 @@
 [webservers]
-webserver.local
+lab05.ekeberg.local
 
 [dbservers]
-dbserver.local
-
-
+lab06.ekeberg.local

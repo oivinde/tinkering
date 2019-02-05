@@ -7,8 +7,8 @@
    - mariadb-server
    - MySQL-python
 
-- name: Configure SELinux to start mysql on any port
-  seboolean: name=mysql_connect_any state=true persistent=yes
+- name: Configure SELinux in permissive mode. Hack to make it work
+  selinux: state=permissive policy=targeted
 
 - name: Create Mysql configuration file
   template: src=my.cnf.j2 dest=/etc/my.cnf

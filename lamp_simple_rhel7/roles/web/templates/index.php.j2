@@ -1,16 +1,16 @@
 <html>
  <head>
-  <title>Ansible Application</title>
+  <title>Fantastisk Ansible demo!</title>
  </head>
  <body>
  </br>
   <a href=http://{{ ansible_default_ipv4.address }}/index.html>Homepage</a>
  </br>
 <?php 
- Print "Hello, World! I am a web server configured using Ansible and I am : ";
+ Print "Hoppla, World! Jeg er en webserver konfiguerert med Ansible og jeg er : ";
  echo exec('hostname');
  Print  "</BR>";
-echo  "List of Databases: </BR>";
+echo  "Liste over databaser: </BR>";
         {% for host in groups['dbservers'] %}
                 $link = mysqli_connect('{{ hostvars[host].ansible_default_ipv4.address }}', '{{ hostvars[host].dbuser }}', '{{ hostvars[host].upassword }}') or die(mysqli_connect_error($link));
         {% endfor %}
