@@ -18,5 +18,5 @@
 - name: http service state
   service: name=httpd state=started enabled=yes
 
-- name: Configure SELinux to allow httpd to connect to remote database
+- name: Configure SELinux to allow httpd to connect to remote database. This is a hack, needs to done right.
   selinux: state=permissive policy=targeted
