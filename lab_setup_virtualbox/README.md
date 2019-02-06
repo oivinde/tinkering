@@ -6,7 +6,7 @@ I like to create three virtual machines for playing with Ansible. One control no
 
 #### In VirtualBox, create NAT Network "DemoNet" - 192.168.90.0/24 (Preferences - Network)
 
-If you want to create port forwarding rules in the NAT Network right away, look at the bottow of this file.
+If you want to create port forwarding rules in the NAT Network right away, look at the bottom of this file.
 
 #### Create new virtual machine:
 - Name: ansible.demo.local
