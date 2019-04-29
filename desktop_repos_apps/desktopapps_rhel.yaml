@@ -1,5 +1,5 @@
 ---
-# Install needed repos and apps for MY Fedora Workstation
+# Install needed repos and apps for my RHEL7  Workstation
 - hosts: localhost
   become: yes
   tasks:
