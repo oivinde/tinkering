@@ -5,7 +5,7 @@
   tasks:
   - name: Install RPM Fusion repos
     dnf:
-      name: ['http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm', 'http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm']
+      name: ['http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm', 'http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_version }}.noarch.rpm']
       state: present
 
   - name: Install Chrome repo
@@ -36,7 +36,7 @@
 
   - name: Install a bunch of apps from misc repos with dnf
     dnf:
-      name: ['nano', 'htop', 'google-chrome-stable', 'code', 'remmina', 'snap']
+      name: ['nano', 'htop', 'google-chrome-stable', 'code', 'remmina', 'snapd', 'screenfetch', 'nautilus-dropbox']
       state: present
 
   - name: Install Flatpak apps
