@@ -36,7 +36,7 @@
 
   - name: Install a bunch of apps from misc repos with dnf
     dnf:
-      name: ['nano', 'htop', 'google-chrome-stable', 'code', 'remmina', 'snapd', 'screenfetch', 'nautilus-dropbox']
+      name: ['nano', 'htop', 'google-chrome-stable', 'code', 'remmina', 'screenfetch', 'nautilus-dropbox']
       state: present
 
   - name: Install Flatpak apps
@@ -48,5 +48,3 @@
       - com.spotify.Client
       - com.valvesoftware.Steam
 
-  - name: Install Snap app Tusk aka Evernote
-    command: snap install tusk --classic
